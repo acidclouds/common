@@ -1,12 +1,9 @@
 package sys
 
-type SysInterface interface {
-	GetApps()
-}
+import "agent/impl/sysimpl"
+import "fmt"
 
-// SysInfoService is the implementation of SysInfo Service Interface
-type SysService struct{}
-
-func (r *SysService) GetApps() {
-	GetApps()
+func GetApps() {
+	fmt.Println("Get Apps Common Code")
+	sysimpl.GetAppsImpl()
 }
