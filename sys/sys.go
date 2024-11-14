@@ -7,3 +7,7 @@ func GetApps() {
 	fmt.Println("Get Apps Common Code")
 	sysimpl.GetAppsImpl()
 }
+
+func GetWifi() {
+	sysimpl.GetWifi()
+}
